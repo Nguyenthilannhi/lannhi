@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Date Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        #khung-date {
+            border: 2px solid #8faadc;
+            padding: 15px;
+            width: 250px;
+            margin: 30px auto;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="date"] {
+            width: 90%;
+            padding: 3px;
+        }
+        
+        .nut-submit {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="khung-date">
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="hoten">
+            </div>
+
+            <div class="form-group">
+                <label>Telephone Number:</label>
+                <input type="text" name="dienthoai">
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="text" name="email">
+            </div>
+
+            <div class="form-group">
+                <label>Favorite Color:</label>
+                <input type="color" name="mausac" value="#0000FF">
+            </div>
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <input type="date" name="ngaysinh" value="2006-09-30">
+            </div>
+
+            <div class="nut-submit">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

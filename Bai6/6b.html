@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us Form</title>
+    <style>
+        body {font-family: "Times New Roman", Times, serif;
+        }
+        khung-ngoai {
+            border: 1px solid #5b9bd5;
+            padding: 20px;
+            width: 600px;
+            margin: 20px auto;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        fieldset {
+            border: 1px solid #a6a6a6;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        
+        legend {
+            color: #333;
+            padding: 0 5px;
+        }
+
+        table { border-collapse: collapse;
+        }
+        
+        td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        
+        .cot-nhan {
+            width: 140px;
+        }
+        
+        .attach-file {margin-top: 10px; }
+    </style>
+</head>
+
+<body>
+
+    <div id="khung-ngoai">
+        <h2>Contact Us</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Your message:</legend>
+
+                <table>
+                    <tr>
+                        <td class="cot-nhan">To</td>
+
+                        <td><input type="text" value="Example Cafe" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td class="cot-nhan">Your email</td>
+                        <td><input type="text" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td class="cot-nhan">Message</td>
+                        <td><textarea rows="6" cols="45"></textarea></td>
+                    </tr>
+                </table>
+
+                <div class="attach-file">
+                    Attach File <input type="file" name="file-upload">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>How you found us:</legend>
+
+                <table>
+                    <tr>
+                        <td class="cot-nhan">How did you hear of us</td>
+                        <td>
+                            <select name="source">
+                                <option value="google">Google</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cot-nhan">Newsletter</td>
+                        <td>
+                            <input type="checkbox" name="newsletter" checked> Ensure this box is checked if you would like to receive email updates
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <input type="submit" value="Send message">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

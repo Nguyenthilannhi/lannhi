@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #99ccff;
+        }
+        
+        #khung-form {
+            width: 700px;
+            margin: 20px auto;
+        }
+        
+        .logo-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo-box div {
+            display: inline-block;
+            background-color: #00ffff;
+            border: 2px solid black;
+            padding: 5px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px gray;
+        }
+        
+        h2,
+        h4 {
+            text-align: center;
+            margin: 5px 0;
+            color: #000;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 6px;
+            vertical-align: top;
+        }
+        
+        .cot-nhan {
+            width: 180px;
+        }
+        
+        hr {
+            border: 1px solid #77aaff;
+            margin: 15px 0;
+        }
+        
+        .nut-bam {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="khung-form">
+        <div class="logo-box">
+            <div>Jackson<br>Electronics</div>
+        </div>
+
+        <h2>Registration Form</h2>
+        <h4>Register your Jackson Electronics product here</h4>
+
+        <form action="#" method="post">
+
+            <table>
+                <tr>
+                    <td class="cot-nhan">First Name:</td>
+                    <td>
+                        <input type="text" name="firstname" size="25"> &nbsp;&nbsp;Last Name: <input type="text" name="lastname" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">Address #1:</td>
+                    <td><input type="text" name="address1" size="40"></td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">Address #2:</td>
+                    <td><input type="text" name="address2" size="40"></td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">City:</td>
+                    <td>
+                        <input type="text" name="city" size="15"> &nbsp;&nbsp;State: <input type="text" name="state" size="5"> &nbsp;&nbsp;Zip: <input type="text" name="zip" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">Country:</td>
+                    <td><input type="text" name="country" value="United States" size="20"></td>
+                </tr>
+            </table>
+
+            <hr>
+            <table>
+                <tr>
+                    <td class="cot-nhan">Product:</td>
+                    <td>
+                        <select name="product">
+                            <option value="ScanMaster">ScanMaster</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">Date Purchased:</td>
+                    <td><input type="text" name="date" size="20"></td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">Serial #:</td>
+                    <td><input type="text" name="serial" size="20"></td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">Used for:</td>
+                    <td>
+                        <table style="width:80%">
+                            <tr>
+                                <td><input type="radio" name="usedfor" value="Home" checked> Home</td>
+                                <td><input type="radio" name="usedfor" value="Educational"> Educational Institution</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="usedfor" value="Business"> Business</td>
+                                <td><input type="radio" name="usedfor" value="Other"> Other</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="usedfor" value="Government"> Government</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cot-nhan">System (check all that apply):</td>
+
+                    <table style="width:80%">
+                        <tr>
+                            <td><input type="checkbox" name="system" value="Windows"> Windows</td>
+                            <td><input type="checkbox" name="system" value="UNIX"> UNIX</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="system" value="Macintosh"> Macintosh</td>
+                            <td><input type="checkbox" name="system" value="Other"> Other</td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <table>
+                <tr>
+                    <td class="cot-nhan">Comments?:</td>
+                    <td><textarea name="comments" rows="5" cols="55"></textarea></td>
+                </tr>
+            </table>
+
+            <div class="nut-bam">
+                <input type="submit" value="Click to register">
+                <input type="reset" value="Click to cancel">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
